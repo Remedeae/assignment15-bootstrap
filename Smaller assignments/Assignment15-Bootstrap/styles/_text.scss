@@ -1,0 +1,66 @@
+* {
+    font-family: $font-text;
+}
+p, h1, h3 {
+    color: $color-text;
+}
+.fa-snowflake {
+    color: rgb(208, 245, 255);
+}
+
+.signup {
+    margin: 1rem 0 0 0;
+}
+
+.druid {
+    color: rgb(255, 119, 0);
+}
+.mage {
+    color: rgb(22, 203, 209);
+}
+.paladin {
+    color: rgb(220, 168, 177);
+}
+.rogue {
+    color: rgb(221, 221, 0);
+}
+.warlock {
+    color: purple;
+}
+.warrior {
+    color: rgb(121, 86, 66);
+}
+
+@media screen and (max-width: 450px){
+    .info {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 550px){
+    .info {
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 750px){
+    .info {
+        font-size: 26px;
+    }
+}
+@media screen and (min-width: 950px){
+    .info {
+        font-size: 32px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .info {
+        font-size: 38px;
+    }
+}
+@media screen and (min-width: 1400px){
+    .info {
+        font-size: 42px;
+    }
+    h3 {
+        font-size: 54px;
+    }
+}

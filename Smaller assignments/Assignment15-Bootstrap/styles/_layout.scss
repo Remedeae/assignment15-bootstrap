@@ -1,0 +1,22 @@
+.signup-box {
+    border: 1.5rem solid rgb(58, 255, 255);
+    margin: 2rem;
+
+    & > * {
+        text-align: center;
+    }
+}
+.info-row, .signup-box {
+    background-color: #ffffff9a;
+}
+
+@media screen and (max-width: 575px){
+    .info-block {
+        display: none;
+    }
+}
+@media screen and (min-width: 576px){
+    .info-ele {
+        display: none;
+    }
+}

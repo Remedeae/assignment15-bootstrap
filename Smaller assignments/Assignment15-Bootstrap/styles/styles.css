@@ -1,7 +1,130 @@
-* {
-  font-family: "EB Garamond", serif;
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), color-stop(cyan), to(cornflowerblue));
+  background-image: linear-gradient(whitesmoke, cyan, cornflowerblue);
+}
+
+.container-fluid {
+  max-width: 1700px;
+  width: 100%;
+  margin: 0;
+}
+.container-fluid div:first-child, .container-fluid div:last-child {
+  padding: 10px;
 }
 
 h1, h2, h3 {
+  font-family: "EB Garamond", serif;
+}
+
+.sylvanas {
+  max-width: 1700px;
+  width: 100%;
+  height: auto;
+}
+
+input {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+* {
   font-family: "Montserrat", sans-serif;
+}
+
+p, h1, h3 {
+  color: rgb(5, 5, 117);
+}
+
+.fa-snowflake {
+  color: rgb(208, 245, 255);
+}
+
+.signup {
+  margin: 1rem 0 0 0;
+}
+
+.druid {
+  color: rgb(255, 119, 0);
+}
+
+.mage {
+  color: rgb(22, 203, 209);
+}
+
+.paladin {
+  color: rgb(220, 168, 177);
+}
+
+.rogue {
+  color: rgb(221, 221, 0);
+}
+
+.warlock {
+  color: purple;
+}
+
+.warrior {
+  color: rgb(121, 86, 66);
+}
+
+@media screen and (max-width: 450px) {
+  .info {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 550px) {
+  .info {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .info {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 950px) {
+  .info {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info {
+    font-size: 38px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .info {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 54px;
+  }
+}
+.signup-box {
+  border: 1.5rem solid rgb(58, 255, 255);
+  margin: 2rem;
+}
+.signup-box > * {
+  text-align: center;
+}
+
+.info-row, .signup-box {
+  background-color: rgba(255, 255, 255, 0.6039215686);
+}
+
+@media screen and (max-width: 575px) {
+  .info-block {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) {
+  .info-ele {
+    display: none;
+  }
 }

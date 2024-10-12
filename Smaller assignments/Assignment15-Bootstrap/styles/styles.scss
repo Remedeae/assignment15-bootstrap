@@ -1,9 +1,23 @@
 @import 'variables';
 
-* {
-    font-family: $font-text;
+body {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(whitesmoke, cyan, cornflowerblue);
+}
+.container-fluid {
+    max-width: 1700px;
+    width: 100%;
+    margin: 0;
+
+    & div:first-child, & div:last-child {
+        padding: 10px;
+    }
 }
 
 h1, h2, h3 {
     font-family: $font-header;
 }
+@import 'images';
+@import 'text';
+@import 'layout';

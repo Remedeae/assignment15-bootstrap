@@ -4,53 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 15 - Bootstrap</title>
-    <link rel="stylesheet" href="styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/3b69314bf3.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-info .bg-gradient">
-    <div class="row">
-        <div class="col">
-            <img src="images/priest-s.jpg" alt="Priest that kinda looks like Michelle?">
+<body>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="">
+                <img src="images/priest-s.jpg" class="img-fluid" alt="Priest that kinda looks like Michelle?">
+            </div>
         </div>
-        <div class="col">
-            <h1>North Alliance Academy</h1>
+        <div class="row">
+            <div class="col ">
+                <h1 class="text-center display-2 fw-bold">North Alliance Academy</h1>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <p>Raid signup:</p>
-            <h2> Icecrown Citadel 25-man</h2>
+        <div class="row">
+            <div class="col ">
+                <p class="text-center display-6 signup">Raid signup:</p>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col text-center">
+                <h2 class="display-3 fw-bold text-primary"> <i class="fa-solid fa-snowflake"></i>Icecrown Citadel 25-man<i class="fa-solid fa-snowflake"></i></h2>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <h3>12th of October, 20:30 Server Time</h3>
-            <p><strong>Bosses:</strong>12 bosses total, 7 on Heroic Mode</p>
-            <p><strong>Requirements:</strong>Minimum of 6k gearscore, knowledge of tactics for all bosses on normal, heroics will be explained. </p>
+        <div class="row info-row">
+            <div class="info-block col-sm-6">
+                <h3 class="display-4">12th of October, 20:30 Server Time</h3>
+                <p class="info"><strong>Bosses:</strong> 12 bosses total, 7 on <i>Heroic Mode</i>
+                    <br><strong>Requirements:</strong> Minimum of 6k gearscore, knowledge of tactics for <strong>all</strong> bosses on normal, <i>heroics</i> will be explained. 
+                </p>
+            </div>
+            <h3 class="info-ele col-12 display-6 ">12th of October, 20:30 Server Time</h3>
+            <p class="info info-ele col-5"><strong>Bosses:</strong> 12 bosses total, 7 on <i>Heroic Mode</i>
+                <br><strong>Requirements:</strong> Minimum of 6k gearscore, knowledge of tactics for <strong>all</strong> bosses on normal, <i>heroics</i> will be explained. 
+            </p>
+            <div class="lich-king col-7 col-sm-6">
+                <picture>
+                    <source media="(max-width: 400px)" srcset="./images/lich-king-xs.jpg" type="image/svg+xml">
+                    <source media="(max-width: 767px)" srcset="./images/lich-king-s.jpg" type="image/svg+xml">
+                    <source media="(min-width: 768px)" srcset="./images/lich-king-l.jpg" type="image/svg+xml">
+                    <img src="images/lich-king-xs.jpg" alt="Lich King" class="img-fluid img-thumbnail">
+                </picture>
+            </div>
         </div>
-        <div class="col"><img src="images/lich-king-s.jpg" alt="Lich King"></div>
-    </div>
-    <form action="">
+        <div class="signup-box">
+            <div class="row fs-3">
+                <div class="col fw-bold text-danger">
+                    <input type="radio" id="dk" value="dk">
+                    <div class="w-100"></div>
+                    <label for="dk">Death Knight</label>
+                </div>
+                <div class="col fw-bold">
+                    <input type="radio" id="druid" value="druid">
+                    <div class="w-100"></div>
+                    <label class="druid" for="druid">Druid</label>
+                </div>
+                <div class="col fw-bold text-success">
+                    <input type="radio" id="hunter" value="hunter">
+                    <div class="w-100"></div>
+                    <label for="hunter">Hunter</label>
+                </div>
+                <div class="col fw-bold">
+                    <input type="radio" id="mage" value="mage">
+                    <div class="w-100"></div>
+                    <label class="mage" for="mage">Mage</label>
+                </div>
+                <div class="col fw-bold">
+                    <input type="radio" id="paladin" value="paladin">
+                    <div class="w-100"></div>
+                    <label class="paladin" for="paladin">Paladin</label>
+                </div>
+                <div class="w-100"></div>
+                <div class="col fw-bold text-light">
+                    <input type="radio" id="priest" value="priest">
+                    <div class="w-100"></div>
+                    <label for="priest">Priest</label>
+                </div>
+                <div class="col fw-bold">
+                    <input type="radio" id="rogue" value="rogue">
+                    <div class="w-100"></div>
+                    <label class="rogue" for="rogue">Rogue</label>
+                </div>
+                <div class="col fw-bold text-primary">
+                    <input type="radio" id="shaman" value="shaman">
+                    <div class="w-100"></div>
+                    <label for="shaman">Shaman</label>
+                </div>
+                <div class="col fw-bold">
+                    <input type="radio" id="warlock" value="warlock">
+                    <div class="w-100"></div>
+                    <label class="warlock" for="warlock">Warlock</label>
+                </div>
+                <div class="col fw-bold">
+                    <input type="radio" id="warrior" value="warrior">
+                    <div class="w-100"></div>
+                    <label class="warrior" for="warrior">Warrior</label>
+                </div>
+            </div>
+            <form action="">
+                <div class="row fs-2">
+                    <div class="col text-center text-nowrap">
+                        <button class="rounded bg-success">Sign Up</button>
+                    </div>
+                    <div class="col text-center">
+                        <button class="rounded bg-secondary">Tentative</button>
+                    </div>     
+                    <div class="col text-center">
+                        <button class="rounded bg-danger">Decline</button>
+                    </div>             
+                </div>
+            </form>
+        </div>
         <div class="row">
             <div class="col">
-                
+                <img src="images/Syvanas-s.jpg" class="img-fluid sylvanas" alt="Sylvanas Windrunner">
             </div>
-            <div class="col"></div>
-            <div class="col">
-                <button>Sign Up</button>
-                <button>Tentative</button>
-                <button>Decline</button>
-            </div>        
         </div>
-    </form>
-    <div class="row">
-        <div class="col">
-            <img src="images/Syvanas-s.jpg" alt="Sylvanas Windrunner">
-        </div>
-    </div>
+    </main>
 </body>
 </html>
